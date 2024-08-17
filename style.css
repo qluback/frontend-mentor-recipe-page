@@ -179,6 +179,7 @@ ol li::marker {
 }
 
 .recipe-preparation .recipe-preparation-title {
+  font-family: "Outfit", sans-serif;
   color: hsl(332, 51%, 32%);
   margin-bottom: 1rem;
 }
