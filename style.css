@@ -89,7 +89,7 @@ main {
   background: #ffffff;
 
   @media screen and (min-width: 375px) {
-    max-width: 500px;
+    max-width: 750px;
     padding: 2rem 2rem 0;
     margin: 2rem 0;
     border-radius: 2rem;
@@ -97,9 +97,9 @@ main {
 }
 
 img {
-  height: 200px;
+  min-height: 200px;
   object-fit: cover;
-  
+
   @media screen and (min-width: 375px) {
     border-radius: 1rem;
   }
@@ -108,6 +108,7 @@ img {
 h1,
 h2 {
   font-family: "Young Serif";
+  font-weight: 400;
 }
 
 h1 {
