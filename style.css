@@ -1,0 +1,230 @@
+@font-face {
+  font-family: "Outfit";
+  src: url("./assets/fonts/outfit/Outfit-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Young Serif";
+  src: url("./assets/fonts/young-serif/YoungSerif-Regular.ttf");
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+  8. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  background: hsl(30, 54%, 90%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Outfit", sans-serif;
+  color: hsl(30, 10%, 34%);
+}
+
+main {
+  background: #ffffff;
+
+  @media screen and (min-width: 375px) {
+    max-width: 500px;
+    padding: 2rem 2rem 0;
+    margin: 2rem 0;
+    border-radius: 2rem;
+  }
+}
+
+img {
+  height: 200px;
+  object-fit: cover;
+  
+  @media screen and (min-width: 375px) {
+    border-radius: 1rem;
+  }
+}
+
+h1,
+h2 {
+  font-family: "Young Serif";
+}
+
+h1 {
+  color: hsl(24, 5%, 18%);
+}
+
+h2 {
+  color: hsl(14, 45%, 36%);
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+ul li {
+  padding-left: 2rem;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+ul li:last-child {
+  margin-bottom: 0;
+}
+
+ul li:before {
+  content: "";
+  background: black;
+  width: 5px;
+  height: 5px;
+  border-radius: 9999px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0%;
+}
+
+ol {
+  padding: 0 1rem;
+}
+
+ol li {
+  padding-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+ol li::marker {
+  color: hsl(14, 45%, 36%);
+  font-weight: 700;
+}
+
+.recipe-content {
+  padding: 2rem 2rem 0;
+
+  @media screen and (min-width: 375px) {
+    padding: 2rem 0 0;
+  }
+}
+
+.recipe-introduction {
+  margin: 1.5rem 0 2rem;
+}
+
+.recipe-preparation {
+  background: hsl(330, 100%, 98%);
+  padding: 1rem 1.5rem 1.5rem;
+  border-radius: 1rem;
+}
+
+.recipe-preparation h3 {
+  color: hsl(332, 51%, 32%);
+  margin-bottom: 1rem;
+}
+
+.recipe-preparation li:before {
+  background: hsl(332, 51%, 32%);
+}
+
+.recipe-section {
+  padding: 2rem 0;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.recipe-section h2 {
+  margin-bottom: 1rem;
+}
+
+.recipe-section:last-of-type {
+  border-bottom: none;
+}
+
+.recipe-section li:before {
+  background: hsl(14, 45%, 36%);
+}
+
+.nutrition-table {
+  margin-top: 1rem;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.nutrition-table td {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  padding: 0.75rem 0;
+  width: 50%;
+}
+
+.nutrition-table tr:last-child td {
+  border-bottom: none;
+}
+
+.nutrition-table .nutrition-cell-title {
+  padding-left: 2rem;
+}
+
+.nutrition-table .nutrition-cell-value {
+  color: hsl(14, 45%, 36%);
+  font-weight: 700;
+}
