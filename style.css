@@ -178,7 +178,7 @@ ol li::marker {
   border-radius: 1rem;
 }
 
-.recipe-preparation h3 {
+.recipe-preparation .recipe-preparation-title {
   color: hsl(332, 51%, 32%);
   margin-bottom: 1rem;
 }
